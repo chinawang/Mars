@@ -97,4 +97,6 @@ $app->group(['namespace' => 'App\Http\Controllers'], function ($app) {
     require __DIR__.'/../routes/web.php';
 });
 
+$app->register(Dingo\Api\Provider\LumenServiceProvider::class);
+
 return $app;

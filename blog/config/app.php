@@ -165,6 +165,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 //        Illuminate\Html\HtmlServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        Dingo\Api\Provider\LaravelServiceProvider::class,
 
 
         /*

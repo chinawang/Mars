@@ -21,10 +21,12 @@ class ArticleController extends Controller
 
 //        $article_list = Article::all();
 //        $article_list = Article::latest()->get();
+
         $article_list = Article::latest('published_at')->get();
         return view('articles.index',compact('article_list'));
 
     }
+    
 
     public function detail($id){
 
